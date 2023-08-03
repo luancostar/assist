@@ -18,8 +18,8 @@
     align-items: center;    
 }
 .nav-header2{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     background: #b3b3b3;
     color: #fff;
 }
@@ -35,10 +35,10 @@
   .button {
     display: inline-block;
     min-width: 100px;
-    margin: 20px auto;
+    margin-top: 10px;
     background: #8BC34A;
     color: #fefefe;
-    font-size: 1.2em;
+    font-size: 15px;
     padding: 0.5em;
     border-radius: 4px;
     text-align: center;
