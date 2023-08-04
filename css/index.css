@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lexend:wght@300;500&family=Sora:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lexend:wght@300;500&family=Sora:wght@600&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }
 
 body,
@@ -170,7 +169,7 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: url(/img/login.jpeg);
+  background-image: url(../img/login.jpeg);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
@@ -211,13 +210,12 @@ form.sign-in-form {
   font-weight: 600;
   line-height: 1;
   font-size: 1.5rem;
- 
 }
-.title_title{
-  font-family: 'Josefin Sans', sans-serif;
+.title_title {
+  font-family: "Josefin Sans", sans-serif;
   font-size: 7rem !important;
 }
-.title_text{
+.title_text {
   font-size: 1rem !important;
 }
 .panel p {
@@ -383,7 +381,7 @@ form.sign-in-form {
     transform: translate(-50%, 0);
   }
 }
-.line-tag{
+.line-tag {
   margin: 0 !important;
   padding: 0 !important;
   font-size: 4rem !important;
@@ -414,7 +412,7 @@ form.sign-in-form {
     left: 50%;
   }
 }
-@media(max-width: 361px){
+@media (max-width: 361px) {
   .container {
     min-height: 740px;
   }
