@@ -8,6 +8,17 @@ if (!isset($_SESSION['logado'])) {
 
 $vendedor = $_SESSION['vendedor'];
 
+function getEnderecos($db)
+{
+    $enderecos = [];
+    $sql = "SELECT * FROM enderecos";
+    $result = $db->query($sql);
+    while ($row = $result->fetch_assoc()) {
+        $enderecos[] = $row;
+    }
+
+    return $enderecos;
+}
 ?>
 
 <!DOCTYPE html>
@@ -111,13 +122,14 @@ $vendedor = $_SESSION['vendedor'];
                 <td>
                     <label style="font-family: system-ui;" for="txtDestino"><strong>Endere&ccedil;o de destino</strong></label>
                     <br>
-                    <select style="width: 310px;font-family: system-ui;
+                    <select id="txtDestino" style="width: 310px;font-family: system-ui;
                   font-weight: 500; padding: 4px" name="" id="">
-
-                        <option value="Desembargador Praxedes 419" type="text" style="width: 300px;font-family: system-ui;
-                  font-weight: 500; padding: 4px; margin-bottom: 1rem; " class="field" id="txtDestino">
-                            Desembargador Praxedes, 419
-                        </option>
+                        <?php foreach (getEnderecos($db) as $endereco) : ?>
+                            <option value="<?= $endereco['endereco'] ?>" type="text" style="width: 300px;font-family: system-ui;
+                                            font-weight: 500; padding: 4px; margin-bottom: 1rem; " class="field">
+                                <?= $endereco['endereco'] ?>
+                            </option>
+                        <?php endforeach; ?>
                     </select>
                 </td>
             </tr>
