@@ -95,7 +95,7 @@ function verificaViagemEmAberto($db, $id_vendedor)
                 </a>
             </div>
             <div class="nav-content2">
-                <a href="travels.html" class="btn-second">
+                <a href="travels.php" class="btn-second">
                     <i style="color: #fff; filter: blur(1px);" class="fas fa-map-marked-alt"></i>
                 </a>
             </div>
